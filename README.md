@@ -12,3 +12,4 @@ https://brawlapi.cf/api
     
 ### This repository is not used to report
 1. API being down (use the [discord server](https://discord.gg/TaMU4Rz) but don't spam)
+2. Your questions regarding "how to use the API"

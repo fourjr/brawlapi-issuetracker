@@ -5,12 +5,13 @@ This is effective as of 4 March 2019.
 By allowing your script or project (your "program") to interact with [BrawlAPI](https://brawlapi.cf/api) (the "API"), you agree to the following terms:
 
 1. You must adhere to the [Supercell Fan Content Policy](https://supercell.com/en/fan-content-policy/)
-2. Your program has to be unique and not a copy of someone else's work. 
-3. Your program must not have any malicious intent.
-4. Your program cannot state that it is affiliated or endorsed by the authors/contributors of the API. 
-5. No circumventing or bypassing ratelimits.
-6. You must not leave the API Discord Server.
-7. You are not allowed to purposely spam the API.
+2. You must adhere to the [Supercell Terms of Service](https://supercell.com/en/terms-of-service/)
+3. Your program has to be unique and not a copy of someone else's work. 
+4. Your program must not have any malicious intent.
+5. Your program cannot state that it is affiliated or endorsed by the authors/contributors of the API. 
+6. No circumventing or bypassing ratelimits.
+7. You must not leave the API Discord Server.
+8. You are not allowed to purposely spam the API.
 
 Any action done under your token is your fault. If your token gets leaked and someone else abuses it, the responsibility still lies on you.
 

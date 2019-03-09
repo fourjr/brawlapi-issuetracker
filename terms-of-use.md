@@ -12,6 +12,7 @@ By allowing your script or project (your "program") to interact with [BrawlAPI](
 6. No circumventing or bypassing ratelimits.
 7. You must not leave the API Discord Server.
 8. You are not allowed to purposely spam the API.
+9. The authorisation token your program uses has to be from your main account *only*.
 
 Any action done under your token is your fault. If your token gets leaked and someone else abuses it, the responsibility still lies on you.
 

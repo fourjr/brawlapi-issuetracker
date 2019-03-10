@@ -41,3 +41,6 @@ The API authors/contributors have the right to revoke your access to the API per
 - Cache your data. 
     - API has a **3 minute TTL cache** so requesting the same data within 3 minutes of the previous request wouldn't be effective. It would only take up server load and slow down other requests.
 - Include a [User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header.
+- Use [gzip](https://www.gzip.org/) compression
+    - This cuts latency into almost half!
+    - Include the `Accept-Encoding: gzip` header.

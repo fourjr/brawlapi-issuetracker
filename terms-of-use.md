@@ -1,28 +1,34 @@
 # Terms of Use
 
-This is effective as of 4 March 2019.
+This is effective as of 21 March 2019.
 
-By allowing your script or project (your "program") to interact with [BrawlAPI](https://brawlapi.cf/api) (the "API"), you agree to the following terms:
+By allowing your script or project ("program") to interact with [BrawlAPI](https://brawlapi.cf/api) ("API"), you agree to the following terms:
 
 1. You must adhere to the [Supercell Fan Content Policy](https://supercell.com/en/fan-content-policy/)
 2. You must adhere to the [Supercell Terms of Service](https://supercell.com/en/terms-of-service/)
 3. Your program has to be unique and not a copy of someone else's work. 
 4. Your program must not have any malicious intent.
-5. Your program cannot state that it is affiliated or endorsed by the authors/contributors of the API. 
-6. No circumventing or bypassing ratelimits.
-7. You must not leave the API Discord Server.
-8. You are not allowed to purposely spam the API.
+5. Your program cannot state that it is affiliated or endorsed by the authors/contributors of the API or Supercell. 
+6. You are not allowed to circumvent or bypass ratelimits, IP Ban or token ban in any way, shape or form.
+7. You must not leave the API Discord Server (ID: 501558785152778252).
+8. You are not allowed to intentionally spam the API.
 9. The authorisation token your program uses has to be from your main account *only*.
 10. Specific to `/player/search` or `/players/search` ("Player Search"), you are not allowed to use "match anything regex" or any other means to attempt to or retrieve our player tag database.
 
-Any action done under your token is your fault. If your token gets leaked and someone else abuses it, the responsibility still lies on you.
+Any action done under your token is your fault. If your token gets leaked and someone else abuses it, the responsibility still lies on you. If someone abuses your application, the responsibility still lies on you.
 
 The API authors/contributors have the right to revoke your access to the API permanently or temporarily without any prior notice. 
 
 # Best Practices
+- Always pre-check tags
+    - Valid characters in a tag: `0289PYLQGRJCUV`
+    - Tags must be a minimum of 3 characters
+    - Avoid sending the request if it does not fufill any of the above conditions
 - Avoid sending many requests at a time, but rather include a latency in between requests
 ```markdown
 # Good
+> request
+> wait
 > request
 > wait
 > request
@@ -36,7 +42,7 @@ The API authors/contributors have the right to revoke your access to the API per
 > request
 > request
 ```
-- Do not continously request the API when you get a "error response" (status code > 500). Include a latency (i.e. 1 minute before requesting again)
+- Do not continously request the API when you get a "error response" (status code > 500). Include a latency (i.e. wait 1 minute before requesting again)
     - API recovers at most 5 minutes after a maintenance break
     - Check for maintenance breaks! `maintenance` key would be `true` in 503 responses
 - Cache your data. 
@@ -45,3 +51,5 @@ The API authors/contributors have the right to revoke your access to the API per
 - Use [gzip](https://www.gzip.org/) compression
     - This cuts latency into almost half!
     - Include the `Accept-Encoding: gzip` header.
+- Include credits
+    - Powered by brawlapi.cf

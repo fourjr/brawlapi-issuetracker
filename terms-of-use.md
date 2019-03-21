@@ -13,6 +13,7 @@ By allowing your script or project (your "program") to interact with [BrawlAPI](
 7. You must not leave the API Discord Server.
 8. You are not allowed to purposely spam the API.
 9. The authorisation token your program uses has to be from your main account *only*.
+10. Specific to `/player/search` or `/players/search` ("Player Search"), you are not allowed to use "match anything regex" or any other means to attempt to or retrieve our player tag database.
 
 Any action done under your token is your fault. If your token gets leaked and someone else abuses it, the responsibility still lies on you.
 
